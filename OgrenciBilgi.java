@@ -1,7 +1,7 @@
 /*
- * Ad Soyad: [ADINIZI BURAYA YAZIN]
- * Ogrenci No: [OGRENCI NUMARANIZI BURAYA YAZIN]
- * Tarih: [TARIHI BURAYA YAZIN]
+ * Ad Soyad: [Ülkü Tuanna Kara]
+ * Ogrenci No: [250541077]
+ * Tarih: [04.11.2025]
  * Aciklama: Gorev 1 - Ogrenci Bilgi Sistemi
  * 
  * Bu program kullanicidan ogrenci bilgilerini alir ve
@@ -13,48 +13,40 @@ import java.util.Scanner;
 
 public class OgrenciBilgi {
     public static void main(String[] args) {
-        // Scanner objesi olusturun
-        
-        
-        // Degisken tanimlamalari
-        // String ad, soyad;
-        // int ogrenciNo, yas;
-        // double gpa;
-        
-        
-        // Kullanicidan bilgileri alin
-        System.out.println("=== OGRENCI BILGI SISTEMI ===");
-        System.out.println();
-        
-        // Ad
-        
-        
-        // Soyad
-        
-        
-        // Ogrenci No
-        
-        
-        // Yas
-        
-        
-        // GPA
-        
-        
-        // Bilgileri ekrana yazdirin
-        System.out.println("\n=== OGRENCI BILGI SISTEMI ===");
-        
-        // COZUMUNUZU BURAYA YAZIN
-        
-        
-        
-        
-        
-        
-
-        
-        
-        // Scanner'i kapatin (önemli pratik)
-        
+    
+        try (Scanner input = new Scanner(System.in)) {
+    
+            System.out.println("=== OGRENCI BILGI SISTEMI ===");
+            
+            System.out.print("Ad: ");
+            String ad = input.nextLine();
+            
+            System.out.print("Soyad: ");
+            String soyad = input.nextLine();
+            
+            System.out.print("Ogrenci Numarasi: ");
+            int ogrNo = input.nextInt();
+            
+            System.out.print("Yas: ");
+            int yas = input.nextInt();
+            
+            System.out.print("Genel Not Ortalamasi (0.00 - 4.00 arasi): ");
+            double gpa = input.nextDouble();
+            
+            String durum;
+            if (gpa >= 2.5) {
+                durum = "Basarili Ogrenci";
+            } else {
+                durum = "Gelisim Gosteriyor";
+            }
+            System.out.println("\n=== OGRENCI BILGILERI ===");
+            System.out.println("Ad: " + ad);
+            System.out.println("Soyad: " + soyad);
+            System.out.println("Ogrenci Numarasi: " + ogrNo);
+            System.out.println("Yas: " + yas);
+            System.out.printf("Genel Not Ortalamasi: %.2f\n", gpa);
+            System.out.println("Durum: " + durum);
+            
+        }
     }
-}
+} 
