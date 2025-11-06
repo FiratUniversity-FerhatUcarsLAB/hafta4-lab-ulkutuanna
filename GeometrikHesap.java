@@ -5,7 +5,6 @@
  * Aciklama: Gorev 2 - Geometrik Hesaplayıcı
  * 
  * Bu program kullanicidan daire yarıcap uzunluğunu alır ve alanı, çevresi çapını ve kürenin hacmini, yüzey alanını hesaplar.
- * Diğer java dosyalarının başında da bu örnek formattaki gibi kısa bilgi giriniz
  */
 import java.util.Scanner;
 
