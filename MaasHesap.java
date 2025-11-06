@@ -4,7 +4,8 @@
  * Tarih: [06.11.2025]
  * Aciklama: Gorev 3- Maaş Hesaplama Sistemi
  * 
- * Bu program kullanicidan çalışandan ad soyad, aylık brüt maaş, haftalık çalışma saati ve mesai saati bilgilerini alıp aylık maaşını hesaplar 
+ * Bu program kullanicidan çalışandan ad soyad, aylık brüt maaş, haftalık çalışma saati ve mesai saati bilgilerini alıp ve kesintileri hesaplayıp çalışanın 
+ aylık maaşını hesaplar 
 */
 
 import java.util.Scanner;
